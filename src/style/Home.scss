@@ -1,0 +1,178 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    .top-bar-icon {
+        color: white;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .top-bar-text {
+        font-size: 12px;
+        text-transform: capitalize;
+        vertical-align: middle;
+    }
+}
+
+.navbar {
+    .container {
+        padding: 0;
+        padding: 1em 0;
+    }
+}
+
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            font-size: 14px;
+            color: black;
+        }
+    }
+}
+
+.navbar-brand img
+{
+    width:140px;
+}
+.navbar-brand
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    margin-top: -24px;
+}
+.navbar
+{
+   padding: 1em 0 !important; 
+}
+.navbar-toggler
+{
+    border: none !important;
+    outline: none !important;
+}
+.banner
+{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.home-header
+{
+    // background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner-text
+{
+    font-size: 36px;
+    color: #fff;
+    padding-left: 4%;
+    padding-top: 220px;
+    padding-bottom: 220px;
+}
+.banner-text .btn-primary
+{
+    background-image: linear-gradient(to right, #3636f3,#be43f1);
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 12px;
+    padding: 15px 30px;
+    margin-top: 10px;
+}
+
+// Home
+
+.hero-section {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+
+    .over{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.3)
+    }
+
+    .hero-content {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        margin-left: -371px;
+        margin-top: -40px;
+        color: white;
+        text-transform: uppercase;
+        h1 {
+           
+            font-size: 76px;
+            font-weight: 400;
+            // font-family: 'NewYork';
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+
+.link-btn {
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: .08em;
+    line-height: 1em;
+    margin: 1.75em 0 0;
+    padding: 1.2em 25px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    transition: background-color .1s,color .1s,border-color .1s,opacity .1s;
+    vertical-align: middle;
+    border: none;
+    transition: .4s all ease-in-out;
+    
+    &:hover {
+        background-color: #85c3bc;
+        color: white;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        height: 75vh;
+
+        .hero-content {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            margin-left: -171px;
+            margin-top: -114px;
+            color: white;
+            text-transform: uppercase;
+            h1 {
+               
+                font-size: 50px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+    
+}
